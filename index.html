@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="container mx-auto mt-8">
+            <h1 class="text-center text-5xl">Login your Account</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto my-8">
+            <div class="login bg-cyan-600 p-28">
+                <div class="mx-auto w-4/5">
+                    <label for="user" class="text-white font-bold text-2xl">Username</label>
+                    <input id="username" type="text" class="block w-3/4 p-3 outline-none mb-4" placeholder="Enter your Username" required>
+                    <label for="user" class="text-white font-bold text-2xl">Password</label>
+                    <input id="password" type="password" class="block w-3/4 p-3 outline-none" placeholder="Enter Password" required>
+
+                    <button id="login-btn" class="bg-fuchsia-500 text-white font-bold py-2 px-14 text-2xl mt-6 hover:bg-fuchsia-800">Login</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="warning" class="w-1/4 border-2 border-indigo-600 rounded-lg p-8 fixed top-[134px] left-[720px] bg-white shadow-lg shadow-indigo-500/50 space-y-3 hidden">
+           <button id="close" class=" px-4 py-2 text-2xl font-bold rounded-full absolute right-0 top-0">X</button>
+            <h1 class="text-3xl font-bold">Attention</h1>
+            <hr>
+            <h1>Username: abc@gmail.com</h1>
+            <h1>Password: secrate</h1>
+        </div>
+    </main>
+
+
+
+    <script src="src/login.js"></script>
+</body>
+</html>
